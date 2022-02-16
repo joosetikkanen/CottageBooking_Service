@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:resource="http://localhost:8080/CottageBooking_SSWAP/" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:sswap="http://sswapmeet.sswap.info/sswap/" 
+xmlns:service="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#">
+  <sswap:Resource rdf:about="http://localhost:8080/CottageBooking_SSWAP/getService">
+    <rdf:type rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#CottageBookingService"/>
+    <sswap:providedBy rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/resourceProvider"/>
+    <sswap:name>Cottage booking service</sswap:name>
+    <sswap:oneLineDescription>A service that looks for available cottages according to request parameters</sswap:oneLineDescription>
+    <sswap:operatesOn>
+      <sswap:Graph>
+        <sswap:hasMapping>
+          <sswap:Subject>
+            <rdf:type rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceRequest"/>
+            <service:name></service:name>
+            <service:numberOfPlaces></service:numberOfPlaces>
+            <service:numberOfBedrooms></service:numberOfBedrooms>
+            <service:maxDistanceToLake></service:maxDistanceToLake>
+            <service:nearestCity></service:nearestCity>
+            <service:maxDistanceToNearestCity></service:maxDistanceToNearestCity>
+            <service:numberOfDays></service:numberOfDays>
+            <service:startingDay></service:startingDay>
+            <service:maxShift></service:maxShift>
+            <sswap:mapsTo>
+              <sswap:Object>
+                <rdf:type rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+                <service:bookingNumber></service:bookingNumber>
+                <service:bookerName></service:bookerName>
+                <service:address></service:address>
+                <service:actualNumberOfPlaces></service:actualNumberOfPlaces>
+                <service:actualNumberOfBedrooms></service:actualNumberOfBedrooms>
+                <service:actualDistanceToLake></service:actualDistanceToLake>
+                <service:actualNearestCity></service:actualNearestCity>
+                <service:actualDistanceToNearestCity></service:actualDistanceToNearestCity>
+                <service:actualStartingDate></service:actualStartingDate>
+                <service:actualEndDate></service:actualEndDate>
+                <service:imageURL></service:imageURL>
+              </sswap:Object>
+            </sswap:mapsTo>
+
+          </sswap:Subject>
+        </sswap:hasMapping>
+
+      </sswap:Graph>
+    </sswap:operatesOn>
+   </sswap:Resource>
+
+</rdf:RDF>

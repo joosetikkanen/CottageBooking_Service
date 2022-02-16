@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#"
+     xml:base="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualDistanceToLake -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualDistanceToLake">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualDistanceToNearestCity -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualDistanceToNearestCity">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualEndDate">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualNearestCity -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualNearestCity">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualNumberOfBedrooms -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualNumberOfBedrooms">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualNumberOfPlaces -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualNumberOfPlaces">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualStartingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#actualStartingDate">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#address -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#address">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#bookerName -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#bookerName">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#bookingNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#bookingNumber">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#imageURL -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#imageURL">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#maxDistanceToLake -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#maxDistanceToLake">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#maxDistanceToNearestCity -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#maxDistanceToNearestCity">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#maxShift -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#maxShift">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#name">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#nearestCity -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#nearestCity">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#numberOfBedrooms -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#numberOfBedrooms">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#numberOfDays -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#numberOfDays">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#numberOfPlaces -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#numberOfPlaces">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#startingDay -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#startingDay">
+        <rdfs:domain rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#CottageBookingService -->
+
+    <owl:Class rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#CottageBookingService"/>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceRequest -->
+
+    <owl:Class rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceRequest">
+        <owl:disjointWith rdf:resource="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult -->
+
+    <owl:Class rdf:about="http://localhost:8080/CottageBooking_SSWAP/res/mySSWAPServiceOntology.owl#ServiceResult"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

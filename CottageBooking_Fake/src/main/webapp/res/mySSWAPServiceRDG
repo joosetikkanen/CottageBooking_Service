@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://sswapmeet.sswap.info/sswap/"
+         xmlns:ns1="http://localhost:8080/CottageBooking_Fake/res/cottageOntology.owl#">
+
+  <rdf:Description rdf:about="http://localhost:8080/CottageBooking_Fake/getService">
+    <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Resource"/>
+    <rdf:type rdf:resource="http://localhost:8080/CottageBooking_Fake/res/cottageOntology.owl#Thing"/>
+    <ns0:providedBy rdf:resource="http://localhost:8080/CottageBooking_Fake/res/resourceProvider"/>
+    <ns0:name>Cottage booking service</ns0:name>
+    <ns0:oneLineDescription>A service that lists cottage bookings.</ns0:oneLineDescription>
+    <ns0:operatesOn>
+      <ns0:Graph>
+        <ns0:hasMapping>
+          <ns0:Subject>
+            <rdf:type rdf:resource="http://localhost:8080/CottageBooking_Fake/res/cottageOntology.owl#CottageSearchRequest"/>
+            <ns1:bookerName></ns1:bookerName>
+            <ns1:minPlaces></ns1:minPlaces>
+            <ns1:minBedrooms></ns1:minBedrooms>
+            <ns1:maxDistanceToLake></ns1:maxDistanceToLake>
+            <ns1:nearestCityName></ns1:nearestCityName>
+            <ns1:maxDistanceToCity></ns1:maxDistanceToCity>
+            <ns1:numberOfDays></ns1:numberOfDays>
+            <ns1:startOfBooking></ns1:startOfBooking>
+            <ns1:maxShift></ns1:maxShift>
+            <ns0:mapsTo>
+              <ns0:Object>
+                <rdf:type rdf:resource="http://localhost:8080/CottageBooking_Fake/res/cottageOntology.owl#CottageSearchResponse"/>
+                <ns1:bookerName></ns1:bookerName>
+                <ns1:bookingNumber></ns1:bookingNumber>
+                <ns1:hasAddress></ns1:hasAddress>
+                <ns1:hasImage></ns1:hasImage>
+                <ns1:numberOfPlaces></ns1:numberOfPlaces>
+                <ns1:numberOfBedrooms></ns1:numberOfBedrooms>
+                <ns1:distanceToLake></ns1:distanceToLake>
+                <ns1:nearestCityName></ns1:nearestCityName>
+                <ns1:distanceToCity></ns1:distanceToCity>
+                <ns1:start></ns1:start>
+                <ns1:end></ns1:end>
+              </ns0:Object>
+            </ns0:mapsTo>
+
+          </ns0:Subject>
+        </ns0:hasMapping>
+
+      </ns0:Graph>
+    </ns0:operatesOn>
+
+  </rdf:Description>
+
+</rdf:RDF>

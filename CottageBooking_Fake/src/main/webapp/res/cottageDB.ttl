@@ -1,0 +1,65 @@
+@prefix : <localhost:8080/CottageBooking/res/cottage.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Jyvaskyla rdf:type :City ;
+           :hasName "Jyvaskyla"^^xsd:string .
+
+:Kuopio rdf:type :City ;
+        :hasName "Kuopio"^^xsd:string .
+
+
+:Tampere rdf:type :City ;
+         :hasName "Tampere"^^xsd:string .
+
+
+:cottage1 rdf:type :Cottage ;
+          :hasNearestCity :Jyvaskyla ;
+          :distanceToLake "500.0"^^xsd:double ;
+          :distanceToNearestCity "2000.0"^^xsd:double ;
+          :hasAddress "exampleaddress1"^^xsd:string ;
+          :hasBedrooms "4"^^xsd:int ;
+          :hasCapacity "10"^^xsd:int ;
+          :hasImage "https://image.posterlounge.fi/img/products/610000/602557/602557_poster_l.jpg"^^xsd:anyURI ;
+          :hasReservation [ rdf:type :Reservation; :startingDate "2021-11-10T00:00:00"^^xsd:dateTime; :endDate "2021-11-17T00:00:00"^^xsd:dateTime ].
+
+
+:cottage2 rdf:type :Cottage ;
+          :hasNearestCity :Jyvaskyla ;
+          :distanceToLake "200.0"^^xsd:double ;
+          :distanceToNearestCity "5000.0"^^xsd:double ;
+          :hasAddress "exampleaddress2"^^xsd:string ;
+          :hasBedrooms "4"^^xsd:int ;
+          :hasCapacity "12"^^xsd:int ;
+          :hasImage "https://q-xx.bstatic.com/xdata/images/hotel/840x460/156057585.jpg?k=c6489a8ad87c504f72313f604b3ca639e6d4840bf3a7e0130b1eae10e91635b9&o="^^xsd:anyURI .
+
+
+:cottage3 rdf:type :Cottage ;
+          :hasNearestCity :Kuopio ;
+          :distanceToLake "1000.0"^^xsd:double ;
+          :distanceToNearestCity "10000.0"^^xsd:double ;
+          :hasAddress "exampleaddress3"^^xsd:string ;
+          :hasBedrooms "2"^^xsd:int ;
+          :hasCapacity "6"^^xsd:int ;
+          :hasImage "https://cdn.abicart.com/shop/ws63/49263/art63/h7973/178917973-origpic-12ee21.jpg"^^xsd:anyURI .
+
+
+:cottage4 rdf:type :Cottage ;
+          :hasNearestCity :Tampere ;
+          :distanceToLake "5000.0"^^xsd:double ;
+          :distanceToNearestCity "3000.0"^^xsd:double ;
+          :hasAddress "exampleaddress4"^^xsd:string ;
+          :hasBedrooms "1"^^xsd:int ;
+          :hasCapacity "5"^^xsd:int ;
+          :hasImage "https://www.lomarengas.fi/serviceimages/3139/3139_02.jpg"^^xsd:anyURI .
+
+
+:cottage5 rdf:type :Cottage ;
+          :hasNearestCity :Tampere ;
+          :distanceToLake "2000.0"^^xsd:double ;
+          :distanceToNearestCity "4000.0"^^xsd:double ;
+          :hasAddress "exampleaddress5"^^xsd:string ;
+          :hasBedrooms "3"^^xsd:int ;
+          :hasCapacity "8"^^xsd:int ;
+          :hasImage "https://image.posterlounge.fi/img/products/580000/577891/577891_poster_l.jpg"^^xsd:anyURI .

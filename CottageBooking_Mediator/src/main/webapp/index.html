@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+
+
+table, th, td {
+  border:1px solid black;
+  padding:5px;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+<script language="JavaScript" src="myAJAXlib.js">
+</script>
+<SCRIPT language="JavaScript" SRC="myJS.js">
+</SCRIPT>
+
+
+</head>
+<body> 
+
+<h1><b>Booking Service Client</b></h1>
+<p></p>
+
+<i>Service URL: </i>
+<input type="text" value="http://localhost:8080/CottageBooking_Fake/getService" style="width:100%"  name="rClass" id="rc">
+<i>Name:</i>
+<input type="text" value="Joose" style="width:100%"  name="rClass" id="tf01">
+<i>Number of places (people):</i>
+<input type="text" value="10" style="width:100%"  name="rClass" id="tf02">
+<i>Number of bedrooms:</i>
+<input type="text" value="4" style="width:100%"  name="rClass" id="tf03">
+<i>Max distance to a lake:</i>
+<input type="text" value="500" style="width:100%"  name="rClass" id="tf04">
+<i>Nearest city:</i>
+<input type="text" value="Jyvaskyla" style="width:100%"  name="rClass" id="tf05">
+<i>Max distance to the city:</i>
+<input type="text" value="5000" style="width:100%"  name="rClass" id="tf06">
+<i>Number of days:</i>
+<input type="text" value="7" style="width:100%"  name="rClass" id="tf07">
+<i>Starting day:</i>
+<input type="date" value="2021-11-05" style="width:100%"  name="rClass" id="tf08">
+<i>Max possible shift (+/- n days):</i>
+<input type="text" value="2" style="width:100%"  name="rClass" id="tf09">
+<input type="button"  value="Query" id="sBut" onclick="doQuery();" style="width:50">
+<input type="button"  value="Delete Alignment" id="delete" onclick="deleteAlignment();" style="float:right">
+
+<div id="results"></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <table id="alignment"></table>
+    <button id="confirm">Ok</button>
+    <button id="cancel">Cancel</button>
+  </div>
+
+</div>
+
+</body>
+</html>

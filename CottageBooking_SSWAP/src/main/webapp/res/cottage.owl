@@ -1,0 +1,145 @@
+@prefix : <localhost:8080/CottageBooking/res/cottage.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <localhost:8080/CottageBooking/res/cottage.owl> .
+
+<localhost:8080/CottageBooking/res/cottage.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  localhost:8080/CottageBooking/res/cottage.owl#hasNearestCity
+:hasNearestCity rdf:type owl:ObjectProperty ;
+                rdfs:domain :Cottage ;
+                rdfs:range :City .
+
+
+###  localhost:8080/CottageBooking/res/cottage.owl#hasReservation
+:hasReservation rdf:type owl:ObjectProperty ;
+                rdfs:domain :Cottage ;
+                rdfs:range :Reservation .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  localhost:8080/CottageBooking/res/cottage.owl#distanceToLake
+:distanceToLake rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Cottage ;
+                rdfs:range xsd:double .
+
+
+###  localhost:8080/CottageBooking/res/cottage.owl#distanceToNearestCity
+:distanceToNearestCity rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Cottage ;
+                       rdfs:range xsd:double .
+
+
+###  localhost:8080/CottageBooking/res/cottage.owl#endDate
+:endDate rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Reservation ;
+         rdfs:range xsd:dateTime .
+
+
+###  localhost:8080/CottageBooking/res/cottage.owl#hasAddress
+:hasAddress rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Cottage ;
+            rdfs:range xsd:string .
+
+
+###  localhost:8080/CottageBooking/res/cottage.owl#hasBedrooms
+:hasBedrooms rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Cottage ;
+             rdfs:range xsd:int .
+
+
+###  localhost:8080/CottageBooking/res/cottage.owl#hasCapacity
+:hasCapacity rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Cottage ;
+             rdfs:range xsd:int .
+
+
+###  localhost:8080/CottageBooking/res/cottage.owl#hasImage
+:hasImage rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Cottage ;
+          rdfs:range xsd:anyURI .
+
+
+###  localhost:8080/CottageBooking/res/cottage.owl#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :City ;
+         rdfs:range xsd:string .
+
+
+###  localhost:8080/CottageBooking/res/cottage.owl#startingDate
+:startingDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Reservation ;
+              rdfs:range xsd:dateTime .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  localhost:8080/CottageBooking/res/cottage.owl#City
+:City rdf:type owl:Class .
+
+
+###  localhost:8080/CottageBooking/res/cottage.owl#Cottage
+:Cottage rdf:type owl:Class .
+
+
+###  localhost:8080/CottageBooking/res/cottage.owl#Reservation
+:Reservation rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#Jyvaskyla
+<http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#Jyvaskyla> rdf:type owl:NamedIndividual ,
+                                                                                              :City .
+
+
+###  http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#Kuopio
+<http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#Kuopio> rdf:type owl:NamedIndividual ,
+                                                                                           :City .
+
+
+###  http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#Tampere
+<http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#Tampere> rdf:type owl:NamedIndividual ,
+                                                                                            :City .
+
+
+###  http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#cottage1
+<http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#cottage1> rdf:type owl:NamedIndividual ,
+                                                                                             :Cottage .
+
+
+###  http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#cottage2
+<http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#cottage2> rdf:type owl:NamedIndividual ,
+                                                                                             :Cottage .
+
+
+###  http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#cottage3
+<http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#cottage3> rdf:type owl:NamedIndividual ,
+                                                                                             :Cottage .
+
+
+###  http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#cottage4
+<http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#cottage4> rdf:type owl:NamedIndividual ,
+                                                                                             :Cottage .
+
+
+###  http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#cottage5
+<http://www.semanticweb.org/joose/ontologies/2021/10/untitled-ontology-36#cottage5> rdf:type owl:NamedIndividual ,
+                                                                                             :Cottage .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
