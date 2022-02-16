@@ -8,7 +8,7 @@ Requires JVM version 1.8.0_161
 3. You can try to use another cottage service by changing the *Service URL* to http://localhost:8080/CottageBooking_SSWAP/getService.
 4. The cottage data is stored in an [RDF-file](CottageBooking_SSWAP/src/main/webapp/res/cottageDB.ttl).
   - To get the "fake" service work properly, ontology alignment is required. You can try the automatic filled values for the first alignment.
-  - To create new alignment, click the *Delete Alignment* button.
+  - To create new alignment, click the *Delete Alignment* button and make a new query.
   - To fix the alignment perfectly, you need to match the vocabulary of ["domestic"](CottageBooking_SSWAP/src/main/webapp/res/mySSWAPServiceRDG) and ["foreign"](CottageBooking_Fake/src/main/webapp/res/mySSWAPServiceRDG) ontologies.
 
 ## Background
